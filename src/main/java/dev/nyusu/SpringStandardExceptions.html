@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Spring Standard Exceptions</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Java Spring Standard Exceptions with HTTP Status Codes</h1>
+
+<table>
+    <tr>
+        <th>Exception</th>
+        <th>Description</th>
+        <th>HTTP Status Code</th>
+    </tr>
+    <tr>
+        <td>DuplicateKeyException</td>
+        <td>Thrown when an attempt to insert or update data results in a duplicate key violation.</td>
+        <td>409 Conflict</td>
+    </tr>
+    <tr>
+        <td>InvalidDataAccessApiUsageException</td>
+        <td>Thrown when incorrect usage of Spring's data access API is detected.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>IncorrectResultSizeDataAccessException</td>
+        <td>Thrown when a result was expected to have a certain size but the returned result set has a different size.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>CannotCreateTransactionException</td>
+        <td>Thrown when a transaction manager cannot create a new transaction or suspend an existing transaction.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>TransactionSystemException</td>
+        <td>Thrown when the underlying transaction system fails unexpectedly.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>UnexpectedRollbackException</td>
+        <td>Thrown when the outcome of a transaction is unexpected.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>InvalidPropertyException</td>
+        <td>Thrown when trying to set an invalid property value.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>IllegalStateException</td>
+        <td>Thrown when an IllegalStateException is encountered in a Spring component.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>BeanCreationException</td>
+        <td>Thrown when a bean is not able to be created.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>BeanDefinitionStoreException</td>
+        <td>Thrown when a bean definition cannot be loaded or registered.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>NoSuchBeanDefinitionException</td>
+        <td>Thrown when a requested bean definition is not found.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>ConversionNotSupportedException</td>
+        <td>Thrown when an attempt to convert a value to another type fails.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>NoSuchRequestHandlingMethodException</td>
+        <td>Thrown when no suitable request-handling method is found.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>HttpMediaTypeNotAcceptableException</td>
+        <td>Thrown when the server is unable to produce a response matching the list of acceptable values defined in the request's headers.</td>
+        <td>406 Not Acceptable</td>
+    </tr>
+    <tr>
+        <td>HttpMediaTypeNotSupportedException</td>
+        <td>Thrown when the server refuses to accept the request because the request entity is in a format not supported by the requested resource.</td>
+        <td>415 Unsupported Media Type</td>
+    </tr>
+    <tr>
+        <td>HttpMessageNotReadableException</td>
+        <td>Thrown when the request body could not be read.</td>
+        <td>400 Bad Request</td>
+    </tr>
+    <tr>
+        <td>HttpMessageNotWritableException</td>
+        <td>Thrown when the request handler is unable to write to the response.</td>
+        <td>500 Internal Server Error</td>
+    </tr>
+    <tr>
+        <td>HttpServerErrorException</td>
+        <td>Thrown when a server error is encountered, such as a 5xx status code.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>HttpClientErrorException</td>
+        <td>Thrown when a client error is encountered, such as a 4xx status code.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>HttpStatusCodeException</td>
+        <td>Thrown for HTTP 4xx and 5xx status codes.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MissingServletRequestParameterException</td>
+        <td>Thrown when a request handler expects a certain parameter, but it's missing.</td>
+        <td>400 Bad Request</td>
+    </tr>
+    <tr>
+        <td>ServletRequestBindingException</td>
+        <td>Thrown when there's an error related to request binding.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MethodArgumentNotValidException</td>
+        <td>Thrown when method argument validation fails.</td>
+        <td>400 Bad Request</td>
+    </tr>
+    <tr>
+        <td>HttpMessageConversionException</td>
+        <td>Thrown when an HTTP message cannot be converted.</td>
+        <td>500 Internal Server Error</td>
+    </tr>
+    <tr>
+        <td>TypeMismatchException</td>
+        <td>Thrown when an attempt to set a bean property with an invalid value is detected.</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>MethodNotAllowedException</td>
+        <td>Thrown when a request handler does not support a specific request method.</td>
+        <td>405 Method Not Allowed</td>
+    </tr>
+</table>
+</body>
+
+</html>
